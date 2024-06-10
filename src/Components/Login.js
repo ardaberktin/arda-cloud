@@ -15,10 +15,8 @@ function Login() {
           username,
           password,
           grant_type: "password",
-          client_id:
-            "Gp7ZFfj0MnEbVYrzLDENBDOlKdRdn2iJq9bRdTqtJdGdcT2aWG2u81sq3BqKXQwe",
-          client_secret:
-            "jwBG55j3EHORJ6wR8WMtnvCKs3jiUCoE7chpwE1zW712RnK1sNtqIbVAEIpxRePU",
+          client_id: process.env.ClIENT_ID,
+          client_secret: process.env.ClIENT_SECRET,
         }
       );
       const accessToken = response.data.access_token;

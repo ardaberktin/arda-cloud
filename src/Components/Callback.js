@@ -18,10 +18,8 @@ function Callback() {
           {
             code,
             grant_type: "authorization_code",
-            client_id:
-              "Gp7ZFfj0MnEbVYrzLDENBDOlKdRdn2iJq9bRdTqtJdGdcT2aWG2u81sq3BqKXQwe",
-            client_secret:
-              "jwBG55j3EHORJ6wR8WMtnvCKs3jiUCoE7chpwE1zW712RnK1sNtqIbVAEIpxRePU",
+            client_id: process.env.ClIENT_ID,
+            client_secret: process.env.ClIENT_SECRET,
             redirect_uri: "http://localhost:3000/callback",
           }
         )
